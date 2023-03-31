@@ -2,9 +2,9 @@
 What was the biggest challenge of scraping the web site?
 
 Some of the challenges that I encountered were:
-  I had a "Unicorn Error"
-  I couldn't use the next button icon (">") so the webdriver could move from one page to another
-  At first I couldn't get the data that I was scraping into the csv file due to several errors
+  I had a "Unicorn Error",
+  I couldn't use the next button icon (">") so the webdriver could move from one page to another,
+  At first I couldn't get the data that I was scraping into the csv file due to several errors.
 
 
 What insight, if any, did you gain from the analysis and visualization of the laptop data?
