@@ -37,16 +37,12 @@ while True:
         specifications = laptop.find_element(By.CLASS_NAME, "description").text
         num_of_reviews = laptop.find_element(By.CLASS_NAME, "ratings").text.split(" ")[0]
         data.append([laptop_name, price, specifications, num_of_reviews])
-        # writer.writerow(
-        #     [laptop_name.text, price.text, specifications.text])
         unique_id +=1
     try:
         element = scraper.find_element(By.PARTIAL_LINK_TEXT,"›")
         element.click()
     except NoSuchElementException:
         break
-
-print(data)
 
 sorted_data = sorted(data, key= lambda row: row[1])
 
@@ -55,5 +51,5 @@ for i, row in enumerate(sorted_data):
 
 # Quit the browser
 
-#file.close()
-#scraper.quit()
+file.close()
+scraper.quit()
